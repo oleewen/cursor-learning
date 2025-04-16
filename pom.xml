@@ -7,10 +7,7 @@
   <groupId>com.cursor.learning</groupId>
   <artifactId>cursor-learning</artifactId>
   <version>1.0-SNAPSHOT</version>
-
   <name>cursor-learning</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
 
   <properties>
     <java.version>8</java.version>
@@ -29,14 +26,6 @@
     <relativePath/>
   </parent>
 
-  <repositories>
-    <repository>
-      <id>libs-all</id>
-      <name>libs-all</name>
-      <url>https://jfrog.dev.ztosys.com/artifactory/libs-all</url>
-    </repository>
-  </repositories>
-
   <dependencies>
     <!-- Spring Boot -->
     <dependency>
@@ -45,7 +34,7 @@
       <version>${spring-boot.version}</version>
     </dependency>
     
-    <!-- Spring Data JPA -->
+    <!-- Spring Data -->
     <dependency>
         <groupId>org.mybatis.spring.boot</groupId>
         <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -125,6 +114,16 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <version>${spring-boot.version}</version>
+        <configuration>
+          <mainClass>com.cursor.learning.boot.SpringBootApplicationStart</mainClass>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
