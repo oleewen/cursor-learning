@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.cursor.learning.repository.UserRepositoryTest
--------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.69 s - in com.cursor.learning.repository.UserRepositoryTest

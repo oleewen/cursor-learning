@@ -6,9 +6,11 @@ alwaysApply: true
 
 # 项目通用规范
 ## 技术栈
-- Java 8
-- Maven管理依赖
+- 使用Java 8
+- 使用Maven管理依赖
+- 使用MyBatis链接数据库
 - 使用Bash脚本
+- 使用yml格式管理配置
 
 ## 代码风格
 - 保持代码简洁、可读
