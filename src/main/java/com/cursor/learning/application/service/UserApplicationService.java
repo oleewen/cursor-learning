@@ -10,11 +10,11 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserService {
+public class UserApplicationService {
     private final UserRepository userRepository;
 
     @Autowired
-    public UserService(UserRepository userRepository) {
+    public UserApplicationService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
