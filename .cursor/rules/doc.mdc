@@ -1,6 +1,6 @@
 ---
 description: 文档规范
-globs: 
+globs: *.md
 alwaysApply: true
 ---
 # 文档规范

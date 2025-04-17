@@ -1,6 +1,6 @@
 ---
 description: Maven依赖和版本管理规范
-globs: */pom.xml
+globs: */pom.xml,pom.xml
 alwaysApply: false
 ---
 # 版本管理

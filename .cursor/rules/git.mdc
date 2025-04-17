@@ -23,7 +23,7 @@ alwaysApply: false
 ```
 
 ### Type类型
-- feat: 新功能
+- feature: 新功能
 - fix: 修复bug
 - docs: 文档更新
 - style: 代码格式调整
