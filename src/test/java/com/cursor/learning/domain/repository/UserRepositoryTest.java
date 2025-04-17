@@ -1,6 +1,7 @@
 package com.cursor.learning.domain.repository;
 
 import com.cursor.learning.domain.entity.User;
+import com.cursor.learning.boot.SpringBootApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,7 +15,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+@SpringBootTest(classes = SpringBootApplication.class)
 @ActiveProfiles("test")
 @TestPropertySource(locations = "classpath:application-test.yml")
 public class UserRepositoryTest {
@@ -174,7 +175,6 @@ public class UserRepositoryTest {
 
     @Test
     @Transactional
-    @Rollback(false)
     public void createPersistentUsers() {
         // 使用时间戳创建唯一的用户名
         String timestamp = String.valueOf(System.currentTimeMillis());

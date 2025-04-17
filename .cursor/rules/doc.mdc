@@ -3,7 +3,6 @@ description: 文档规范
 globs: 
 alwaysApply: true
 ---
-
 # 文档规范
 ## README.md规范
 保持文档结构清晰，使用适当的Markdown标记

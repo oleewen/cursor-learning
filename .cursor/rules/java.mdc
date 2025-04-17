@@ -3,7 +3,6 @@ description: Java编码规范
 globs: *.java
 alwaysApply: false
 ---
-
 # 角色
 你是Java编程的专家，精通Java语言、Spring Boot、Spring 框架、Maven、JUnit及相关Java技术中间件。
 

@@ -3,33 +3,42 @@ description: Git规范
 globs: .git/*
 alwaysApply: false
 ---
-
-# Git 规范
-## 提交规范
-git提交记录遵从该模式:
-[type]: [description]
-例子：docs: 更新README文件
-以下是type的枚举值:
-- feature:新增功能
-- fix bug:修复bug
-- docs:文档注释
-- style:代码格式(不影响代码运行的变动)
-- refactor:重构、优化(既不增加新功能，也不是修复bug)
-- performance:性能优化
-- test:增加测试
-- chore:构建过程或辅助工具的变动
-- revert:回退
+# Git 使用规范
 
 ## 分支管理
-- main/master:主分支，保持稳定可发布状态
-- develop:开发分支，包含最新开发特性
-- feature/*:功能分支，用于开发新功能
-- bugfix/*:修复分支，用于修复bug
-- release/*:发布分支，用于准备发布
+- master/main: 主分支，用于生产环境
+- develop: 开发分支，用于开发环境
+- feature/*: 功能分支，用于新功能开发
+- hotfix/*: 热修复分支，用于生产环境紧急修复
+- release/*: 发布分支，用于版本发布
 
-## 重要原则
-- **重要**:不要自动提交git代码，除非有明确的提示
-- 提交前确保代码通过所有测试
-- 保持提交信息简洁明了，描述清楚变更内容
-- 避免大型提交，尽量将变更分解为小的、相关的提交
-- 提交后自动Push到远程
+## 提交规范
+### 提交信息格式
+```
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+```
+
+### Type类型
+- feat: 新功能
+- fix: 修复bug
+- docs: 文档更新
+- style: 代码格式调整
+- refactor: 重构代码
+- test: 测试相关
+- chore: 构建过程或辅助工具的变动
+
+### 规范要求
+- 使用中文进行描述，使用现在时态，结尾不加句号
+- 简明扼要，不超过50个字符
+- 提交前确保代码通过所有测试，提交后自动Push到远程
+
+## 工作流程
+1. 从最新的develop分支创建功能分支
+2. 在功能分支上进行开发
+3. 完成后提交Pull Request
+4. 通过代码审查后合并到develop分支
+5. 定期将develop分支合并到master/main分支发布

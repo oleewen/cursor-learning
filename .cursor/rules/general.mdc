@@ -3,7 +3,6 @@ description: 项目通用规范和基本要求
 globs: ["*"]
 alwaysApply: true
 ---
-
 # 项目通用规范
 ## 技术栈
 - 使用Java 8
