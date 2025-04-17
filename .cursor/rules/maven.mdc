@@ -5,5 +5,5 @@ alwaysApply: false
 ---
 # 版本管理
 - 使用Maven管理依赖和构建程序
-- api和common模块需不依赖于工程的parent pom，独立管理自己的版本号，依赖的包指定版本号
-- 其他模块保持跟parent一样的版本，保持SNAPSHOT版本，并采用maven的revision统一版本号
+- api和common模块独立管理版本号，不使用revision
+- 其他模块，采用maven的revision统一版本号
